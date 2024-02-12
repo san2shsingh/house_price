@@ -19,7 +19,6 @@ This web application allows users to predict house prices based on house propert
 
 Install the required packages using the following command:
 
-```bash
 pip install -r requirements.txt
 
 # Usage
