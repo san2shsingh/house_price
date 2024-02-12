@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction Web App</title>
+</head>
+<body>
+    <h1>House Price Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="longitude">Longitude_____________:</label>
+        <input type="text" name="longitude" required><br>
+
+        <label for="latitude">Latitude_______________:</label>
+        <input type="text" name="latitude" required><br>
+
+        <label for="housing_median_age">Housing Median Age____:</label>
+        <input type="text" name="housing_median_age" required><br>
+
+        <label for="total_rooms">Total Rooms___________:</label>
+        <input type="text" name="total_rooms" required><br>
+
+        <label for="total_bedrooms">Total Bedrooms_________:</label>
+        <input type="text" name="total_bedrooms" required><br>
+
+        <label for="population">Population_____________:</label>
+        <input type="text" name="population" required><br>
+
+        <label for="households">Households____________:</label>
+        <input type="text" name="households" required><br>
+
+        <label for="median_income">Median Income_________:</label>
+        <input type="text" name="median_income" required><br>
+
+        <label for="ocean_proximity">Ocean Proximity________:</label>
+        <input type="text" name="ocean_proximity" required><br>
+
+        <label for="agency">Agency________________:</label>
+        <input type="text" name="agency"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+    <p>{{ prediction }}</p>
+    {% endif %}
+
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
