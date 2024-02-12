@@ -24,8 +24,8 @@ pip install -r requirements.txt
 # Usage
 ## Clone the repository:
 
-git clone https://github.com/yourusername/house-price-prediction.git
-cd house-price-prediction
+git clone git@github.com:san2shsingh/house_price.git
+cd house_price
 
 1. Place your pre-trained model file (house_price_model.joblib) in the project directory.
 
